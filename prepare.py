@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 from env import get_connection
-
+from sklearn.model_selection import train_test_split
 
 def prep_telco_data(telco_churn):
     telco_churn = telco_churn.drop(columns=['internet_service_type_id', 'contract_type_id','payment_type_id'])
